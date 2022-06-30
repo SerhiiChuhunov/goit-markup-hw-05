@@ -33,7 +33,7 @@
             <ul class="contacts">
                 <li class="item">
                     <a href="mailto:info@devstudio.com" class="link">
-                        <svg class="icon-contacts" width="16" height="12">
+                        <svg class="icon-contacts" width="16" height="12" aria-hidden="true">
                             <use href="./images/icons.svg#envelope"></use>
                         </svg>
                         info@devstudio.com
@@ -41,7 +41,7 @@
                 </li>
                 <li class="item">
                     <a href="tel:+380961111111" class="link">
-                        <svg class="icon-contacts" width="10" height="16">
+                        <svg class="icon-contacts" width="10" height="16" aria-hidden="true">
                             <use href="./images/icons.svg#smartphone"></use>
                         </svg>
                         +38 096 111 11 11
@@ -54,13 +54,15 @@
         <section class="section hero">
             <div class="container">
                 <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
-                <button type="button" class="button">Заказать услугу</button>
+                <button data-modal-open type="button" class="button">Заказать услугу</button>
             </div>
-            <div class="backdrop">
+            <div class="backdrop is-hidden" data-modal>
                 <div class="modal">
-                    <svg class="icon-modal" width="30" height="30">
-                        <use href="./images/close/close.svg"></use>
-                    </svg>
+                    <button data-modal-close type="button" class="modal-item">
+                        <svg class="icon-modal" width="18" height="18">
+                            <use href="./images/icons.svg#close"></use>
+                        </svg>
+                    </button>
                 </div>
             </div>
         </section>
@@ -155,28 +157,28 @@
                                 <ul class="card-icon">
                                     <li class="item-team">
                                         <a class="link" href="#">
-                                            <svg class="icon-team" width="20" height="20">
+                                            <svg class="icon-team" width="20" height="20" aria-label="Ссылка на Instagram">
                                                 <use href="./images/icons.svg#instagram"></use>
                                             </svg>
                                         </a>
                                     </li>
                                     <li class="item-team">
                                         <a class="link" href="#">
-                                            <svg class="icon-team" width="20" height="20">
+                                            <svg class="icon-team" width="20" height="20" aria-label="Ссылка на Twitter">
                                                 <use href="./images/icons.svg#twitter"></use>
                                             </svg>
                                         </a>
                                     </li>
                                     <li class="item-team">
                                         <a class="link" href="#">
-                                            <svg class="icon-team" width="20" height="20">
+                                            <svg class="icon-team" width="20" height="20" aria-label="Ссылка на Facebook">
                                                 <use href="./images/icons.svg#facebook"></use>
                                             </svg>
                                         </a>
                                     </li>
                                     <li class="item-team">
                                         <a class="link" href="#">
-                                            <svg class="icon-team" width="20" height="20">
+                                            <svg class="icon-team" width="20" height="20" aria-label="Ссылка на Linkedin">
                                                 <use href="./images/icons.svg#linkedin"></use>
                                             </svg>
                                         </a>
@@ -196,28 +198,28 @@
                                 <ul class="card-icon">
                                     <li class="item-team">
                                         <a class="link" href="#">
-                                            <svg class="icon-team" width="20" height="20">
+                                            <svg class="icon-team" width="20" height="20" aria-label="Ссылка на Instagram">
                                                 <use href="./images/icons.svg#instagram"></use>
                                             </svg>
                                         </a>
                                     </li>
                                     <li class="item-team">
                                         <a class="link" href="#">
-                                            <svg class="icon-team" width="20" height="20">
+                                            <svg class="icon-team" width="20" height="20" aria-label="Ссылка на Twitter">
                                                 <use href="./images/icons.svg#twitter"></use>
                                             </svg>
                                         </a>
                                     </li>
                                     <li class="item-team">
                                         <a class="link" href="#">
-                                            <svg class="icon-team" width="20" height="20">
+                                            <svg class="icon-team" width="20" height="20" aria-label="Ссылка на Facebook">
                                                 <use href="./images/icons.svg#facebook"></use>
                                             </svg>
                                         </a>
                                     </li>
                                     <li class="item-team">
                                         <a class="link" href="#">
-                                            <svg class="icon-team" width="20" height="20">
+                                            <svg class="icon-team" width="20" height="20" aria-label="Ссылка на Linkedin">
                                                 <use href="./images/icons.svg#linkedin"></use>
                                             </svg>
                                         </a>
@@ -237,28 +239,28 @@
                                 <ul class="card-icon">
                                     <li class="item-team">
                                         <a class="link" href="#">
-                                            <svg class="icon-team" width="20" height="20">
+                                            <svg class="icon-team" width="20" height="20" aria-label="Ссылка на Instagram">
                                                 <use href="./images/icons.svg#instagram"></use>
                                             </svg>
                                         </a>
                                     </li>
                                     <li class="item-team">
                                         <a class="link" href="#">
-                                            <svg class="icon-team" width="20" height="20">
+                                            <svg class="icon-team" width="20" height="20" aria-label="Ссылка на Twitter">
                                                 <use href="./images/icons.svg#twitter"></use>
                                             </svg>
                                         </a>
                                     </li>
                                     <li class="item-team">
                                         <a class="link" href="#">
-                                            <svg class="icon-team" width="20" height="20">
+                                            <svg class="icon-team" width="20" height="20" aria-label="Ссылка на Facebook">
                                                 <use href="./images/icons.svg#facebook"></use>
                                             </svg>
                                         </a>
                                     </li>
                                     <li class="item-team">
                                         <a class="link" href="#">
-                                            <svg class="icon-team" width="20" height="20">
+                                            <svg class="icon-team" width="20" height="20" aria-label="Ссылка на Linkedin">
                                                 <use href="./images/icons.svg#linkedin"></use>
                                             </svg>
                                         </a>
@@ -278,28 +280,28 @@
                                 <ul class="card-icon">
                                     <li class="item-team">
                                         <a class="link" href="#">
-                                            <svg class="icon-team" width="20" height="20">
+                                            <svg class="icon-team" width="20" height="20" aria-label="Ссылка на Instagram">
                                                 <use href="./images/icons.svg#instagram"></use>
                                             </svg>
                                         </a>
                                     </li>
                                     <li class="item-team">
                                         <a class="link" href="#">
-                                            <svg class="icon-team" width="20" height="20">
+                                            <svg class="icon-team" width="20" height="20" aria-label="Ссылка на Twitter">
                                                 <use href="./images/icons.svg#twitter"></use>
                                             </svg>
                                         </a>
                                     </li>
                                     <li class="item-team">
                                         <a class="link" href="#">
-                                            <svg class="icon-team" width="20" height="20">
+                                            <svg class="icon-team" width="20" height="20" aria-label="Ссылка на Facebook">
                                                 <use href="./images/icons.svg#facebook"></use>
                                             </svg>
                                         </a>
                                     </li>
                                     <li class="item-team">
                                         <a class="link" href="#">
-                                            <svg class="icon-team" width="20" height="20">
+                                            <svg class="icon-team" width="20" height="20" aria-label="Ссылка на Linkedin">
                                                 <use href="./images/icons.svg#linkedin"></use>
                                             </svg>
                                         </a>
@@ -367,7 +369,8 @@
                 <a href="./index.html" class="logo-white"><span class="accent">Web</span>Studio</a>
                 <address class="address">
                     <ul class="address-nav">
-                        <li class="item"><a class="link-nav" href="https://bit.ly/3pXMvUd" target="_blank" rel="noopener noreferrer">г.
+                        <li class="item"><a class="link-nav" href="https://bit.ly/3pXMvUd" target="_blank"
+                                rel="noopener noreferrer">г.
                                 Киев, пр-т
                                 Леси Украинки, 26</a></li>
                         <li class="item"><a class="link" href="mailto:info@devstudio.com">info@example.com</a></li>
@@ -380,28 +383,28 @@
                 <ul class="social">
                     <li class="item-social">
                         <a class="link" href="#">
-                            <svg class="icon-social" width="20" height="20">
+                            <svg class="icon-social" width="20" height="20" aria-label="Ссылка на Instagram">
                                 <use href="./images/icons.svg#instagram"></use>
                             </svg>
                         </a>
                     </li>
                     <li class="item-social">
                         <a class="link" href="#">
-                            <svg class="icon-social" width="20" height="20">
+                            <svg class="icon-social" width="20" height="20" aria-label="Ссылка на Twitter">
                                 <use href="./images/icons.svg#twitter"></use>
                             </svg>
                         </a>
                     </li>
                     <li class="item-social">
                         <a class="link" href="#">
-                            <svg class="icon-social" width="20" height="20">
+                            <svg class="icon-social" width="20" height="20" aria-label="Ссылка на Facebook">
                                 <use href="./images/icons.svg#facebook"></use>
                             </svg>
                         </a>
                     </li>
                     <li class="item-social">
                         <a class="link" href="#">
-                            <svg class="icon-social" width="20" height="20">
+                            <svg class="icon-social" width="20" height="20" aria-label="Ссылка на Linkedin">
                                 <use href="./images/icons.svg#linkedin"></use>
                             </svg>
                         </a>
